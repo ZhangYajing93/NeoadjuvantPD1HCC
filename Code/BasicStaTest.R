@@ -1,7 +1,7 @@
 ## diversity change test
 
 ## load data
-load(file = 'D:/HKU/Nivo_ICItherapy/TCR-seq/DataAnalysis/OriData/nivo.TCR.RData')
+load(file = 'D:/HKU/Nivo_ICItherapy/TCR-seq/DataAnalysis/OriData/nivo.TCR.basicstats.RData')
 
 load('D:/HKU/Nivo_ICItherapy/TCR-seq/DataAnalysis/OriData/pat.inf.RData')
 
@@ -400,6 +400,7 @@ clonality.plot <- ggboxplot(diversity, x = 'group1', y = 'clonality', add = 'dot
 ggsave(filename = "clonality.boxplot_edit.pdf",
        path = "D:/HKU/Nivo_ICItherapy/TCR-seq/DataAnalysis/Fig",
        width=8,height=6,units="in")
+
 
 
 
